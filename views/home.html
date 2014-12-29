@@ -1,0 +1,16 @@
+
+<% include header.html %>
+<div class="jumbotron">
+    <h1>Welcome <%= username %>, 欢迎登陆！！</h1>    
+</div>
+<table class="table table-bordered table-hover">
+    <tr><th>台子描述</th><th>价格</th></tr>    
+    <tbody id="table-list"></tbody>
+</table>
+<script src="javascripts/require.js"></script>    
+<script type="text/javascript">    
+    require(["javascripts/main.js"],function(){
+            require(["javascripts/app/table.js"]);
+        });
+</script>
+<% include footer.html %>

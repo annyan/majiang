@@ -1,0 +1,6 @@
+<%for(var i in table){%>
+    <tr>
+        <td><%= table[i].description %></td>
+        <td><%= table[i].price %>/<%= table[i].priceper %></td>        
+    </tr>
+<% }%>
